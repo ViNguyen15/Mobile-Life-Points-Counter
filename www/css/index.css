@@ -1,0 +1,159 @@
+/* ----------UI------------ */
+* {
+    box-sizing: border-box;
+  }
+  
+  #bigBox{
+    width: 100%;
+  }
+  
+  #headerBox{
+    height: 8%;
+    display: grid;
+    place-items: center;
+    font-size: 3em;
+  }
+  
+  #leftBox{
+    width: 50%;
+    height: 10%;
+    float: left;
+    display: grid;
+    place-items: center;
+  }
+  
+  #rightBox{
+    width: 50%;
+    height: 10%;
+    float: right;
+    display: grid;
+    place-items: center;
+  }
+  
+  #footerBox{
+    float: left;
+    width: 100%;
+    height: 15%;
+    display: grid;
+    place-items: center;
+  }
+  
+  
+  
+  /* -------player boxes------ */
+  .playerLabel{
+    text-align: center;
+    width: 50%;
+    font-size: 2.7em;
+    border: none;
+    pointer-events: none;
+  }
+  
+  .lifePoints{
+    text-align: center;
+    font-size: 3em;
+    border: none;
+    width: 50%;
+    pointer-events: none;
+  }
+  
+  .playerBox{
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  #updateBox{
+    font-size: 2em;
+    text-align: center;
+    height: 50px;
+  }
+  #update > button{
+    float:right;
+    width: 50px;
+    height: 50px;
+  }
+  
+
+  /* ------Roll Dice and Coin------- */
+  #accessories{
+    text-align: center;
+  }
+  #accessories > button{
+    width: 200px;
+    height: 50px;
+  }
+
+  .message{
+    text-align: center;
+    width: 250px;
+    height: 200px;
+    font-size: 5em;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fadeOut 3s;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  @keyframes fadeOut{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+  }
+
+
+  /* --------Logs style--------- */
+  #logBox{
+    border: none;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 5%;
+    left: 3%;
+  }
+  #logBox > img{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+  }
+
+  #logScreen{
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    overflow: scroll;
+  }
+  
+  .logText{
+    color: black;
+    margin-left: 5px;
+    display: block;
+    padding: 3px;
+  }
+
+  #logBtn{
+    width: 50px;
+    height: 50px;
+  }
+  
+  
+  /* tester boxes */
+  /* div{
+    border: 1px solid black;
+  }
+  
+  .box{
+    border: 1px solid black;
+  }
+  
+  #bigBox{
+    border: 1px solid red;
+  } */
